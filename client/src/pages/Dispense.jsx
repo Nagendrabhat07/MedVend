@@ -27,7 +27,7 @@ const Dispense = ({ diagnosisData }) => {
     setSuccess(false);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/dispense', {
+      const response = await axios.post('https://medvend-serve.onrender.com/api/dispense', {
         compartment: diagnosisData.compartment
       });
 

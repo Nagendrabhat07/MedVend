@@ -16,7 +16,7 @@ const Diagnose = ({ setDiagnosisData }) => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/diagnose', {
+      const response = await axios.post('https://medvend-serve.onrender.com/api/diagnose', {
         symptoms,
         age: parseInt(age),
         days: parseInt(days)
